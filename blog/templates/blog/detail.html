@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block body %}
+Abhishek Singh
+   <div class="container">
+       <div class="row">
+           <div class="col-md-8 col-md-offset-2">
+                <h3> Detail Page</h3>
+
+                {{query.title }}
+                <img src="{{query.logo.url }}">
+                post by {{ query.author }} on {{ query.date }}
+                {{ query.body }}
+
+           </div>
+       </div>
+    </div>
+
+{% endblock %}
